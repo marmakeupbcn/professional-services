@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mar Vila Gracia — Professional Makeup Artist</title>
+
+<meta name="description"
+content="Mar Vila Gracia — Professional Makeup Artist. Makeup, characterisation and hair for TV & Film, Opera and Fashion.">
+
+<style>
+
+/* =========================================================
+RESET
+========================================================= */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #fff;
+color: #000;
+font-family: Arial, Helvetica, sans-serif;
+overflow-x: hidden;
+}
+
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+
+/* =========================================================
+HEADER
+========================================================= */
+
+header {
+position: fixed;
+z-index: 100;
+top: 0;
+left: 0;
+
+width: 100%;
+
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+
+padding: 22px 25px;
+
+mix-blend-mode: difference;
+color: white;
+}
+
+.logo {
+font-size: 15px;
+line-height: 1;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: -0.03em;
+}
+
+.logo span {
+display: block;
+margin-top: 7px;
+
+font-size: 9px;
+font-weight: 400;
+letter-spacing: 0.16em;
+}
+
+nav {
+display: flex;
+gap: 22px;
+
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero {
+min-height: 100vh;
+padding: 110px 25px 35px;
+
+display: grid;
+grid-template-columns: 38% 62%;
+
+position: relative;
+}
+
+.hero-copy {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+padding-right: 6vw;
+}
+
+.hero-name {
+font-size: clamp(42px, 6vw, 95px);
+line-height: 0.82;
+letter-spacing: -0.075em;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.hero-role {
+margin-top: 18px;
+
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+}
+
+.hero-statement {
+margin-top: 15vh;
+
+font-family: Georgia, "Times New Roman", serif;
+font-size: clamp(34px, 4vw, 66px);
+line-height: 0.95;
+letter-spacing: -0.055em;
+}
+
+.hero-visual {
+position: relative;
+min-height: calc(100vh - 145px);
+}
+
+.hero-main-image {
+position: absolute;
+
+top: 0;
+right: 0;
+
+width: 82%;
+height: 82%;
+
+background: #111;
+}
+
+.hero-secondary-image {
+position: absolute;
+
+bottom: 0;
+left: 0;
+
+width: 34%;
+height: 31%;
+
+background: #ddd;
+}
+
+
+/* =========================================================
+SECTION BASICS
+========================================================= */
+
+section {
+position: relative;
+}
+
+.section {
+padding: 15vw 25px;
+}
+
+.section-header {
+display: grid;
+grid-template-columns: 20% 80%;
+gap: 20px;
+
+margin-bottom: 8vw;
+}
+
+.section-index {
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+
+.section-title {
+font-size: clamp(65px, 11vw, 180px);
+line-height: 0.72;
+letter-spacing: -0.085em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.section-intro {
+max-width: 650px;
+
+margin-top: 45px;
+
+font-size: 16px;
+line-height: 1.5;
+}
+
+.department {
+margin-top: 25px;
+
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.18em;
+}
+
+
+/* =========================================================
+TV & FILM
+========================================================= */
+
+.tv-main {
+width: 78%;
+height: 85vh;
+
+margin-left: auto;
+
+background: #111;
+}
+
+.tv-caption {
+width: 78%;
+
+margin: 15px 0 0 auto;
+
+display: flex;
+justify-content: space-between;
+
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+}
+
+.tv-grid {
+margin-top: 12vw;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+gap: 7vw 4vw;
+}
+
+.tv-item:nth-child(even) {
+margin-top: 12vw;
+}
+
+.tv-image {
+height: 70vh;
+background: #111;
+}
+
+.item-title {
+margin-top: 18px;
+
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+}
+
+.item-description {
+max-width: 500px;
+
+margin-top: 12px;
+
+font-size: 14px;
+line-height: 1.6;
+}
+
+
+/* =========================================================
+OPERA
+========================================================= */
+
+.opera {
+background: #000;
+color: #fff;
+}
+
+.opera-layout {
+display: grid;
+grid-template-columns: 40% 60%;
+
+gap: 6vw;
+}
+
+.opera-copy {
+padding-right: 4vw;
+}
+
+.opera-title {
+font-size: clamp(65px, 10vw, 170px);
+line-height: 0.7;
+letter-spacing: -0.08em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.opera-description {
+margin-top: 60px;
+
+max-width: 520px;
+
+font-size: 15px;
+line-height: 1.7;
+}
+
+.opera-image {
+height: 90vh;
+background: #222;
+}
+
+.opera-details {
+margin-top: 55px;
+
+max-width: 520px;
+
+font-size: 14px;
+line-height: 1.7;
+}
+
+.opera-details p + p {
+margin-top: 20px;
+}
+
+
+/* =========================================================
+FASHION
+========================================================= */
+
+.fashion {
+padding-bottom: 18vw;
+}
+
+.fashion-header {
+max-width: 900px;
+}
+
+.fashion-gallery {
+margin-top: 8vw;
+
+display: grid;
+grid-template-columns: 60% 40%;
+gap: 4vw;
+}
+
+.fashion-main {
+height: 85vh;
+background: #111;
+}
+
+.fashion-side {
+display: flex;
+flex-direction: column;
+gap: 5vw;
+}
+
+.fashion-side-image {
+height: 55vh;
+background: #111;
+}
+
+.fashion-side-item:nth-child(2) {
+margin-left: -20%;
+}
+
+
+/* =========================================================
+BEYOND MAKEUP
+========================================================= */
+
+.beyond {
+background: #fff;
+border-top: 1px solid #000;
+}
+
+.beyond-header {
+display: grid;
+grid-template-columns: 25% 75%;
+}
+
+.beyond-title {
+font-size: clamp(60px, 10vw, 165px);
+line-height: 0.72;
+letter-spacing: -0.08em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.beyond-text {
+max-width: 620px;
+
+margin-top: 40px;
+
+font-family: Georgia, "Times New Roman", serif;
+font-size: clamp(25px, 3vw, 48px);
+line-height: 1;
+letter-spacing: -0.04em;
+}
+
+.beyond-gallery {
+margin-top: 10vw;
+
+display: grid;
+grid-template-columns: 38% 62%;
+gap: 5vw;
+}
+
+.beyond-item:nth-child(2) {
+margin-top: 14vw;
+}
+
+.beyond-item:nth-child(3) {
+grid-column: 1 / -1;
+
+width: 58%;
+margin-left: auto;
+}
+
+.beyond-image {
+height: 65vh;
+background: #111;
+}
+
+.beyond-label {
+margin-top: 15px;
+
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.14em;
+}
+
+
+/* =========================================================
+ABOUT
+========================================================= */
+
+.about {
+background: #f3f3f3;
+}
+
+.about-layout {
+display: grid;
+grid-template-columns: 45% 55%;
+gap: 7vw;
+}
+
+.about-image {
+height: 80vh;
+background: #111;
+}
+
+.about-copy {
+max-width: 650px;
+}
+
+.about-small-title {
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+
+.about-name {
+margin-top: 45px;
+
+font-size: clamp(50px, 7vw, 105px);
+line-height: 0.8;
+letter-spacing: -0.07em;
+text-transform: uppercase;
+}
+
+.about-text {
+margin-top: 60px;
+
+font-size: 15px;
+line-height: 1.7;
+}
+
+.about-text p + p {
+margin-top: 22px;
+}
+
+.skills {
+margin-top: 55px;
+
+padding-top: 20px;
+
+border-top: 1px solid #000;
+}
+
+.skills-title {
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.15em;
+}
+
+.skills-list {
+margin-top: 15px;
+
+font-family: Georgia, "Times New Roman", serif;
+font-size: 26px;
+line-height: 1.2;
+}
+
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.contact {
+min-height: 100vh;
+
+background: #000;
+color: #fff;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contact-title {
+max-width: 1100px;
+
+font-size: clamp(70px, 12vw, 200px);
+line-height: 0.7;
+letter-spacing: -0.085em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.contact-links {
+display: flex;
+flex-wrap: wrap;
+gap: 35px;
+
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 0.13em;
+}
+
+.contact-links a {
+border-bottom: 1px solid #fff;
+padding-bottom: 5px;
+}
+
+.contact-links a:hover {
+background: #fff;
+color: #000;
+}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+footer {
+padding: 20px 25px;
+
+background: #000;
+color: #fff;
+
+border-top: 1px solid #444;
+
+display: flex;
+justify-content: space-between;
+
+font-size: 8px;
+text-transform: uppercase;
+letter-spacing: 0.14em;
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+nav {
+display: none;
+}
+
+.hero {
+grid-template-columns: 1fr;
+}
+
+.hero-copy {
+min-height: 60vh;
+padding-right: 0;
+}
+
+.hero-visual {
+min-height: 70vh;
+}
+
+.section-header {
+grid-template-columns: 1fr;
+}
+
+.opera-layout,
+.about-layout {
+grid-template-columns: 1fr;
+}
+
+.opera-copy {
+padding-right: 0;
+}
+
+.opera-image,
+.about-image {
+height: 70vh;
+}
+
+.fashion-gallery {
+grid-template-columns: 1fr;
+}
+
+.fashion-side-item:nth-child(2) {
+margin-left: 0;
+}
+
+.beyond-header {
+grid-template-columns: 1fr;
+}
+
+.beyond-gallery {
+grid-template-columns: 1fr 1fr;
+}
+
+.beyond-item:nth-child(3) {
+width: 100%;
+grid-column: 1 / -1;
+}
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+header {
+padding: 18px 16px;
+}
+
+.hero {
+padding: 105px 16px 25px;
+}
+
+.hero-copy {
+min-height: 55vh;
+}
+
+.hero-name {
+font-size: 48px;
+}
+
+.hero-statement {
+margin-top: 80px;
+font-size: 38px;
+}
+
+.hero-visual {
+min-height: 65vh;
+}
+
+.hero-main-image {
+width: 88%;
+height: 58vh;
+}
+
+.hero-secondary-image {
+width: 43%;
+height: 24vh;
+}
+
+.section {
+padding: 28vw 16px;
+}
+
+.section-title,
+.opera-title,
+.beyond-title {
+font-size: 65px;
+}
+
+.tv-main {
+width: 100%;
+height: 65vh;
+}
+
+.tv-caption {
+width: 100%;
+flex-direction: column;
+gap: 7px;
+}
+
+.tv-grid {
+grid-template-columns: 1fr;
+gap: 65px;
+}
+
+.tv-item:nth-child(even) {
+margin-top: 0;
+}
+
+.tv-image {
+height: 62vh;
+}
+
+.opera-layout {
+grid-template-columns: 1fr;
+}
+
+.opera-image {
+height: 65vh;
+}
+
+.fashion-gallery {
+grid-template-columns: 1fr;
+}
+
+.fashion-main,
+.fashion-side-image {
+height: 65vh;
+}
+
+.beyond-gallery {
+grid-template-columns: 1fr;
+}
+
+.beyond-item:nth-child(2) {
+margin-top: 0;
+}
+
+.beyond-item:nth-child(3) {
+width: 100%;
+}
+
+.beyond-image {
+height: 60vh;
+}
+
+.about-layout {
+grid-template-columns: 1fr;
+}
+
+.about-image {
+height: 65vh;
+}
+
+.contact {
+min-height: 80vh;
+}
+
+.contact-title {
+font-size: 72px;
+}
+
+.contact-links {
+flex-direction: column;
+align-items: flex-start;
+}
+
+footer {
+padding: 18px 16px;
+
+flex-direction: column;
+gap: 8px;
+}
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+HEADER
+========================================================= -->
+
+<header>
+
+<a href="#inicio" class="logo">
+Mar Vila Gracia
+<span>Professional Makeup Artist</span>
+</a>
+
+<nav>
+<a href="#tv-film">TV & Film</a>
+<a href="#opera">Opera</a>
+<a href="#fashion">Fashion</a>
+<a href="#beyond">Beyond Makeup</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<main id="inicio">
+
+
+<!-- =========================================================
+HERO
+========================================================= -->
+
+<section class="hero">
+
+<div class="hero-copy">
+
+<h1 class="hero-name">
+Mar Vila<br>
+Gracia
+</h1>
+
+<p class="hero-role">
+Professional Makeup Artist
+</p>
+
+<p class="hero-statement">
+El maquillaje<br>
+al servicio<br>
+del arte.
+</p>
+
+</div>
+
+
+<div class="hero-visual">
+
+<!-- FOTO PRINCIPAL -->
+<div class="hero-main-image">
+<!-- Aquí irá tu fotografía -->
+</div>
+
+<!-- FOTO SECUNDARIA -->
+<div class="hero-secondary-image">
+<!-- Aquí irá tu segunda fotografía -->
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+TV & FILM
+========================================================= -->
+
+<section class="section" id="tv-film">
+
+<div class="section-header">
+
+<p class="section-index">
+01 / TV & Film
+</p>
+
+<div>
+
+<h2 class="section-title">
+TV & Film
+</h2>
+
+<p class="section-intro">
+Maquillaje y caracterización para cámara,
+desde maquillaje de alta definición y beauty
+hasta efectos prácticos y transformación
+estética del personaje.
+</p>
+
+<p class="department">
+Head of Makeup Department
+</p>
+
+</div>
+
+</div>
+
+
+<!-- FOTO PRINCIPAL DE AGNÈS -->
+
+<div class="tv-main">
+<!--
+FOTO PRINCIPAL:
+Agnès — rostro salpicado de sangre
++ hematoma progresivo
+-->
+</div>
+
+<div class="tv-caption">
+<span>Agnès</span>
+<span>Practical Effects / Characterisation</span>
+</div>
+
+
+<div class="tv-grid">
+
+
+<article class="tv-item">
+
+<div class="tv-image">
+<!-- Foto: heridas / hematomas / sangre -->
+</div>
+
+<h3 class="item-title">
+Practical Effects
+</h3>
+
+<p class="item-description">
+Heridas superficiales, cortes, erupciones,
+hematomas, progresiones de lesiones y
+salpicaduras de sangre.
+</p>
+
+</article>
+
+
+<article class="tv-item">
+
+<div class="tv-image">
+<!-- Foto: caracterización -->
+</div>
+
+<h3 class="item-title">
+Characterisation
+</h3>
+
+<p class="item-description">
+Modificación estética de la apariencia del
+personaje según su personalidad, necesidades
+del guion y evolución dentro de la historia.
+</p>
+
+</article>
+
+
+<article class="tv-item">
+
+<div class="tv-image">
+<!-- Foto: beauty para cámara -->
+</div>
+
+<h3 class="item-title">
+Beauty for Camera
+</h3>
+
+<p class="item-description">
+Maquillaje pensado para alta definición,
+corrigiendo imperfecciones y realzando las
+características de cada persona con acabados
+naturales para cámara.
+</p>
+
+</article>
+
+
+<article class="tv-item">
+
+<div class="tv-image">
+<!-- Foto: ropa / suciedad / sangre / ambientación -->
+</div>
+
+<h3 class="item-title">
+Character Details
+</h3>
+
+<p class="item-description">
+Intervención sobre vestuario y apariencia
+para construir estados físicos y reforzar
+la ambientación del personaje.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+OPERA
+========================================================= -->
+
+<section class="section opera" id="opera">
+
+<div class="opera-layout">
+
+<div class="opera-copy">
+
+<p class="section-index">
+02 / Opera
+</p>
+
+<h2 class="opera-title">
+Opera
+</h2>
+
+<p class="opera-description">
+Desarrollo de la propuesta estética de cada
+personaje y dirección del departamento de
+maquillaje según las necesidades de la producción.
+</p>
+
+<p class="department">
+Head of Makeup Department
+</p>
+
+
+<div class="opera-details">
+
+<p>
+Definición de la propuesta estética,
+planificación de tiempos y organización
+del trabajo.
+</p>
+
+<p>
+Caracterización, envejecimiento, aplicación
+de calotas y maquillaje.
+</p>
+
+<p>
+Formación y coordinación de equipos para
+aplicar la caracterización de cada personaje.
+</p>
+
+<p>
+Peluquería, tocados, accesorios y elementos
+complementarios vinculados a la creación
+del personaje.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="opera-image">
+<!-- FOTO PRINCIPAL DE ÓPERA -->
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+FASHION
+========================================================= -->
+
+<section class="section fashion" id="fashion">
+
+<div class="fashion-header">
+
+<p class="section-index">
+03 / Fashion
+</p>
+
+<h2 class="section-title">
+Fashion
+</h2>
+
+<p class="section-intro">
+Maquillaje y peluquería para editoriales,
+pasarela y beauty, trabajando junto a una
+dirección estética y un concepto visual definido.
+</p>
+
+<p class="department">
+Head of Makeup Department
+</p>
+
+</div>
+
+
+<div class="fashion-gallery">
+
+<div class="fashion-main">
+<!-- FOTO GRANDE DE MODA -->
+</div>
+
+
+<div class="fashion-side">
+
+<div class="fashion-side-item">
+
+<div class="fashion-side-image">
+<!-- FOTO EDITORIAL -->
+</div>
+
+<p class="item-title">
+Editorial
+</p>
+
+</div>
+
+
+<div class="fashion-side-item">
+
+<div class="fashion-side-image">
+<!-- FOTO BEAUTY / PASARELA -->
+</div>
+
+<p class="item-title">
+Beauty / Runway
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+BEYOND MAKEUP
+========================================================= -->
+
+<section class="section beyond" id="beyond">
+
+<div class="beyond-header">
+
+<p class="section-index">
+Beyond Makeup
+</p>
+
+<div>
+
+<h2 class="beyond-title">
+Beyond<br>
+Makeup
+</h2>
+
+<p class="beyond-text">
+La creación del personaje también vive
+en los detalles.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="beyond-gallery">
+
+
+<article class="beyond-item">
+
+<div class="beyond-image">
+<!-- FOTO: TOCADO -->
+</div>
+
+<p class="beyond-label">
+Headpieces / Tocados
+</p>
+
+</article>
+
+
+<article class="beyond-item">
+
+<div class="beyond-image">
+<!-- FOTO: ACCESORIOS / PROPS -->
+</div>
+
+<p class="beyond-label">
+Accessories / Props
+</p>
+
+</article>
+
+
+<article class="beyond-item">
+
+<div class="beyond-image">
+<!-- FOTO: OTRO ELEMENTO DE CARACTERIZACIÓN -->
+</div>
+
+<p class="beyond-label">
+Character Details
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+ABOUT
+========================================================= -->
+
+<section class="section about" id="about">
+
+<div class="about-layout">
+
+<div class="about-image">
+<!-- FOTO TUYA -->
+</div>
+
+
+<div class="about-copy">
+
+<p class="about-small-title">
+About
+</p>
+
+<h2 class="about-name">
+Mar Vila<br>
+Gracia
+</h2>
+
+
+<div class="about-text">
+
+<p>
+Apasionada por el maquillaje y la
+caracterización, desarrolla su trabajo
+entre la creación artística y las necesidades
+técnicas de cada producción.
+</p>
+
+<p>
+Titulada en Caracterización y Maquillaje
+Profesional y Estética, trabaja en cine,
+ópera, publicidad y moda, combinando
+maquillaje, caracterización y peluquería.
+</p>
+
+<p>
+Su experiencia incluye producciones
+cinematográficas independientes, proyectos
+vinculados a ESCAC, trabajos de publicidad
+y producciones operísticas junto a ESMUC
+y el Conservatori del Liceu.
+</p>
+
+<p>
+También imparte talleres y clases de maquillaje.
+</p>
+
+</div>
+
+
+<div class="skills">
+
+<p class="skills-title">
+Additional skills
+</p>
+
+<p class="skills-list">
+Characterisation · Hair · Updos · Nails
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+CONTACT
+========================================================= -->
+
+<section class="section contact" id="contact">
+
+<div>
+
+<p class="section-index">
+Contact
+</p>
+
+<h2 class="contact-title">
+Let's create<br>
+something<br>
+together.
+</h2>
+
+</div>
+
+
+<div class="contact-links">
+
+<!-- CAMBIA TU EMAIL -->
+<a href="mailto:TUEMAIL@EJEMPLO.COM">
+Email
+</a>
+
+<!-- CAMBIA TU INSTAGRAM -->
+<a href="https://instagram.com/TUUSUARIO"
+target="_blank"
+rel="noopener">
+Instagram
+</a>
+
+<!-- CAMBIA TU TELÉFONO -->
+<a href="tel:+34XXXXXXXXX">
+Phone
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<span>
+© 2026 Mar Vila Gracia
+</span>
+
+<span>
+Professional Makeup Artist
+</span>
+
+</footer>
+
+
+</body>
+</html>
