@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,89 +10,60 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo">
-        <a href="index.html">
-          <span class="logo-name">MAR VILA GRACIA</span>
-          <span class="logo-sub">Professional Makeup Artist</span>
-        </a>
-      </div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="tv-film.html">TV & FILM</a></li>
-          <li><a href="opera.html">OPERA</a></li>
-          <li><a href="fashion.html">FASHION</a></li>
-          <li><a href="beyond-makeup.html">BEYOND MAKEUP</a></li>
-          <li><a href="about.html" class="active">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" aria-hidden="true">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="tv-film.html">TV & FILM</a></li>
-        <li><a href="opera.html">OPERA</a></li>
-        <li><a href="fashion.html">FASHION</a></li>
-        <li><a href="beyond-makeup.html">BEYOND MAKEUP</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
+  <!-- =========================================================
+  HEADER
+  ========================================================= -->
+  <header>
+    <a href="index.html" class="logo">
+      Mar Vila Gracia
+      <span>Professional Makeup Artist</span>
+    </a>
+    <nav>
+      <a href="tv-film.html">TV & Film</a>
+      <a href="opera.html">Opera</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="beyond-makeup.html">Beyond Makeup</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
+    <!-- =========================================================
+    ABOUT PAGE
+    ========================================================= -->
     <section class="about-page">
       <div class="about-layout">
-        <!-- IMAGEN -->
         <div class="about-image">
           <img src="images/home/about.jpg" alt="Mar Vila Gracia — Professional Makeup Artist" />
         </div>
-
-        <!-- CONTENIDO -->
-        <div class="about-content">
-          <h1>MAR VILA GRACIA</h1>
-
+        <div class="about-copy">
+          <p class="about-small-title">About</p>
+          <h2 class="about-name">Mar Vila<br>Gracia</h2>
           <div class="about-text">
             <p>
               Apasionada por el maquillaje y la caracterización, desarrolla su trabajo entre la creación artística y las necesidades técnicas de cada producción.
             </p>
-
             <p>
               Titulada en Caracterización y Maquillaje Profesional y Estética, trabaja en cine, ópera, publicidad y moda, combinando maquillaje, caracterización y peluquería.
             </p>
-
             <p>
               Su experiencia incluye producciones cinematográficas independientes, proyectos vinculados a ESCAC, trabajos de publicidad y producciones operísticas junto a ESMUC y el Conservatori del Liceu.
             </p>
-
             <p>
               También imparte talleres y clases de maquillaje.
             </p>
           </div>
-
-          <!-- SKILLS -->
-          <div class="skills-section">
-            <h2>Skills</h2>
-            <div class="skills-list">
-              <span>Characterisation</span>
-              <span>Hair</span>
-              <span>Updos</span>
-              <span>Nails</span>
-              <span>Prosthetics</span>
-              <span>Practical Effects</span>
-              <span>Beauty for Camera</span>
-            </div>
+          <div class="skills">
+            <p class="skills-title">Additional skills</p>
+            <p class="skills-list">Characterisation · Hair · Updos · Nails</p>
           </div>
         </div>
       </div>
 
-      <!-- NAVEGACIÓN -->
+      <!-- =========================================================
+      NAVEGACIÓN
+      ========================================================= -->
       <nav class="page-nav">
         <a href="index.html" class="nav-back">← BACK TO HOME</a>
         <a href="contact.html" class="nav-next">CONTACT →</a>
@@ -100,8 +71,12 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© Mar Vila Gracia — Professional Makeup Artist</p>
+  <!-- =========================================================
+  FOOTER
+  ========================================================= -->
+  <footer>
+    <span>© 2026 Mar Vila Gracia</span>
+    <span>Professional Makeup Artist</span>
   </footer>
 
   <script src="script.js"></script>
