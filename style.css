@@ -1138,6 +1138,123 @@ ANIMACIONES SUTILES
 
 .project:nth-child(2) { animation-delay: 0.1s; }
 .project:nth-child(3) { animation-delay: 0.2s; }
+/* =========================================================
+BEYOND HOME — Sección destacada en la página principal
+========================================================= */
+.beyond-home {
+  padding: 80px 25px;
+  background: #fff;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.beyond-home-header {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 60px;
+}
+
+.beyond-home-header .section-index {
+  margin-bottom: 0;
+}
+
+.beyond-home-title {
+  font-size: clamp(60px, 10vw, 165px);
+  line-height: 0.72;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.beyond-home-text {
+  max-width: 620px;
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 3vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.beyond-home-gallery {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 5vw;
+  margin-top: 40px;
+}
+
+.beyond-home-item:nth-child(2) {
+  margin-top: 14vw;
+}
+
+.beyond-home-item:nth-child(3) {
+  grid-column: 1 / -1;
+  width: 58%;
+  margin-left: auto;
+}
+
+.beyond-home-image {
+  height: 55vh;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.beyond-home-image img {
+  object-fit: cover;
+}
+
+.beyond-home-label {
+  margin-top: 15px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.7;
+}
+
+.beyond-home .ver-mas {
+  margin-top: 50px;
+}
+
+/* =========================================================
+RESPONSIVE — Beyond Home
+========================================================= */
+@media (max-width: 900px) {
+  .beyond-home-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .beyond-home-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .beyond-home-item:nth-child(3) {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+  
+  .beyond-home-item:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .beyond-home {
+    padding: 50px 16px;
+  }
+  
+  .beyond-home-gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .beyond-home-image {
+    height: 40vh;
+  }
+  
+  .beyond-home-item:nth-child(3) {
+    width: 100%;
+  }
+}
 .project:nth-child(4) { animation-delay: 0.3s; }
     text-align: center;
   }
