@@ -1,167 +1,89 @@
-// =========================================================
-// MENÚ MÓVIL — TOGGLE
-// =========================================================
-document.addEventListener('DOMContentLoaded', function() {
-  // Crear botón de menú móvil si no existe
-  const header = document.querySelector('header');
-  const nav = document.querySelector('nav');
-  
-  if (header && nav) {
-    // Verificar si ya existe un botón de menú
-    let menuToggle = document.querySelector('.menu-toggle');
-    
-    if (!menuToggle) {
-      menuToggle = document.createElement('button');
-      menuToggle.className = 'menu-toggle';
-      menuToggle.setAttribute('aria-label', 'Toggle menu');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.innerHTML = '<span></span><span></span><span></span>';
-      
-      // Insertar después del logo o al final del header
-      const logo = header.querySelector('.logo');
-      if (logo) {
-        header.insertBefore(menuToggle, nav);
-      } else {
-        header.appendChild(menuToggle);
-      }
-    }
-    
-    // Crear menú móvil si no existe
-    let mobileMenu = document.querySelector('.mobile-menu');
-    
-    if (!mobileMenu) {
-      mobileMenu = document.createElement('div');
-      mobileMenu.className = 'mobile-menu';
-      mobileMenu.setAttribute('aria-hidden', 'true');
-      
-      // Copiar los enlaces del nav
-      const navLinks = nav.querySelectorAll('a');
-      const ul = document.createElement('ul');
-      
-      navLinks.forEach(function(link) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = link.href;
-        a.textContent = link.textContent;
-        li.appendChild(a);
-        ul.appendChild(li);
-      });
-      
-      mobileMenu.appendChild(ul);
-      
-      // Insertar después del header o al final del body
-      document.body.insertBefore(mobileMenu, document.body.firstChild);
-    }
-    
-    // Evento toggle del menú
-    menuToggle.addEventListener('click', function() {
-      const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
-      this.setAttribute('aria-expanded', expanded);
-      mobileMenu.classList.toggle('open');
-      mobileMenu.setAttribute('aria-hidden', expanded ? 'false' : 'true');
-      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-    });
-    
-    // Cerrar menú al hacer clic en un enlace
-    const mobileLinks = mobileMenu.querySelectorAll('a');
-    mobileLinks.forEach(function(link) {
-      link.addEventListener('click', function() {
-        mobileMenu.classList.remove('open');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
-    });
-  }
-});
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mar Vila Gracia — Professional Makeup Artist</title>
+  <meta name="description" content="Mar Vila Gracia — Professional Makeup Artist. Makeup, characterisation and hair for TV & Film, Opera and Fashion." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>" />
+</head>
+<body>
 
-// =========================================================
-// HEADER SCROLL EFFECT
-// =========================================================
-const header = document.querySelector('header');
+  <!-- =========================================================
+  HEADER
+  ========================================================= -->
+  <header>
+    <a href="index.html" class="logo">
+      Mar Vila Gracia
+      <span>Professional Makeup Artist</span>
+    </a>
+    <nav>
+      <a href="tv-film.html">TV & Film</a>
+      <a href="opera.html">Opera</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="beyond-makeup.html">Beyond Makeup</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-if (header) {
-  window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (currentScroll > 100) {
-      header.style.background = 'rgba(0, 0, 0, 0.9)';
-      header.style.mixBlendMode = 'normal';
-    } else {
-      header.style.background = 'transparent';
-      header.style.mixBlendMode = 'difference';
-    }
-  });
-}
+  <main>
 
-// =========================================================
-// ANIMACIONES AL HACER SCROLL (INTERSECTION OBSERVER)
-// =========================================================
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
+    <!-- =========================================================
+    HERO
+    ========================================================= -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1 class="hero-name">
+          Mar Vila<br>
+          Gracia
+        </h1>
+        <p class="hero-role">Professional Makeup Artist</p>
+        <p class="hero-statement">
+          El maquillaje<br>
+          al servicio<br>
+          del arte.
+        </p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-main-image">
+          <img src="images/home/hero.jpg" alt="Mar Vila Gracia" />
+        </div>
+        <div class="hero-secondary-image">
+          <img src="images/home/hero-2.jpg" alt="Makeup detail" />
+        </div>
+      </div>
+    </section>
 
-const observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-    }
-  });
-}, observerOptions);
+    <!-- =========================================================
+    WORK — RAMAS CON IMÁGENES DE FONDO
+    ========================================================= -->
+    <section class="work-ramas">
+      <p class="section-index">WORK</p>
+      <div class="ramas-grid">
+        
+        <a href="tv-film.html" class="rama-item rama-tvfilm">
+          <div class="rama-overlay">
+            <span class="rama-number">01</span>
+            <span class="rama-title">TV & FILM</span>
+          </div>
+        </a>
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Elementos a animar
-  const elements = document.querySelectorAll(
-    '.rama-item, .project, .about-home-layout, ' +
-    '.contact-home-content, .about-layout, .contact-content'
-  );
-  
-  elements.forEach(function(el) {
-    // Si no tiene estilos de animación inline, los añadimos
-    if (!el.style.opacity) {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-    }
-    observer.observe(el);
-  });
-});
+        <a href="opera.html" class="rama-item rama-opera">
+          <div class="rama-overlay">
+            <span class="rama-number">02</span>
+            <span class="rama-title">OPERA</span>
+          </div>
+        </a>
 
-// =========================================================
-// IMÁGENES CON FALLBACK (placeholder)
-// =========================================================
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('img');
-  
-  images.forEach(function(img) {
-    img.addEventListener('error', function() {
-      // Si la imagen no carga, la reemplazamos con un placeholder
-      this.style.background = '#e0e0e0';
-      this.alt = this.alt || 'Imagen no disponible';
-      this.src = '';
-    });
-  });
-});
+        <a href="fashion.html" class="rama-item rama-fashion">
+          <div class="rama-overlay">
+            <span class="rama-number">03</span>
+            <span class="rama-title">FASHION</span>
+          </div>
+        </a>
 
-// =========================================================
-// NAVEGACIÓN ACTIVA (marcar página actual)
-// =========================================================
-document.addEventListener('DOMContentLoaded', function() {
-  const currentPath = window.location.pathname;
-  const currentPage = currentPath.split('/').pop() || 'index.html';
-  
-  const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
-  
-  navLinks.forEach(function(link) {
-    const href = link.getAttribute('href');
-    if (href === currentPage) {
-      link.style.opacity = '0.5';
-      link.style.textDecoration = 'underline';
-    }
-  });
-});
-
-console.log('🚀 Mar Vila Gracia — Professional Makeup Artist');
-console.log('📸 Portfolio web cargada correctamente');
+        <a href="beyond-makeup.html" class="rama-item rama-beyond">
+          <div class="rama-overlay">
+            <span class="rama-number">
